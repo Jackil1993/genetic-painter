@@ -31,7 +31,7 @@ def genetic_painter(png, generations, init_population):
                      toolbox.attr_bool, len(png[0]))
     # define the population to be a list of individuals
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-    # define the fitness function to be maximize
+    # define the fitness function to be maximized
 
     def objective(individual, row):
         fitness = 0
